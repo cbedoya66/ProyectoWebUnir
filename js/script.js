@@ -8,11 +8,11 @@ var select = document.getElementById('idioma');
     var selected = select.options[select.selectedIndex].text;
     if (selected === 'Ingles') {
    
-        location.href="http://localhost/Blog_restaurante/index_ingles.html";
+        location.href="https://cbedoya66.github.io/ProyectoWebUnir/index_ingles.html";
         
     }else{
         if (selected==="Español") {
-            location.href="http://localhost/Blog_restaurante/index.html";
+            location.href="https://cbedoya66.github.io/ProyectoWebUnir/index.html";
         }
     } 
        
