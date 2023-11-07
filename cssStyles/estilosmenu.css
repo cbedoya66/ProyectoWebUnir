@@ -1,0 +1,147 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* HEADER*/
+
+.header {
+  position: relative;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../restaurante.jpeg);
+  background-repeat: no-repeat;
+  background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, hsla(0, 0%, 26%, 0.623), hsla(0, 0%, 0%, 0.628))
+,url(../restaurante.jpeg);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, hsla(0, 0%, 26%, 0.623), hsla(0, 0%, 0%, 0.628))
+,url(../restaurante.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header .textos-header {
+  display: flex;
+  height: 430px;
+  width: 100%;
+  position: absolute;
+  top: 55%;
+  flex-direction: column;
+  text-align: center;
+}
+
+.content_avatar {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: #b0a7a7;
+  border-radius: 50%;
+}
+
+
+.content_avatar img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  border: 10px solid #b0a7a7; 
+  border-radius: 50%;
+}
+
+
+
+.textos-header h1 {
+  color: #fff;  
+  font-size: 3.5rem;
+}
+
+.textos-header p {
+    color: #fff;  
+    font-size: 2rem;
+  }
+
+.textos-header span {
+    color: #5577ef;  
+    font-size: 3.5rem;
+  }
+
+.navbar {
+  position: absolute !important;
+  margin-top: 0px !important;
+  width: 100%;
+  height: 120px;
+  position: absolute !important;
+  background: -webkit-linear-gradient(
+    to right,
+    hsla(240, 100%, 14%, 0.635),
+    hsla(193, 78%, 49%, 0.662)
+  ) !important; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    hsla(240, 100%, 14%, 0.635),
+    hsla(193, 78%, 49%, 0.662)
+  ) !important;
+}
+
+.navbar-brand .content_avatar3 {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: #b0a7a7;
+  border-radius: 50%;
+}
+
+.navbar-brand .content_avatar3 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  border: 10px solid #b0a7a7; 
+  border-radius: 50%;
+}
+
+.navbar-collapse {
+  flex-grow: 0 !important;
+  margin-right: 100px !important;
+  color: #fff !important;
+}
+
+.navbar-collapse ul li a {
+  color: #fff !important;
+  font-size: 1.2rem;
+}
+
+.navbar-collapse ul li a:hover {
+  color: #b0a7a7 !important;
+  font-size: 1.2rem;
+}
+
+
+/* ABOUT*/
+.content_about{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-evenly;
+}
+.content_avatar2{
+    width: 70%;
+    height: 70%;
+    margin-right: 50px;
+    background: #5577ef;
+}
+
+.content_avatar2 img{
+    width: 100%;
+}
