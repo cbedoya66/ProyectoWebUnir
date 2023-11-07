@@ -23,7 +23,7 @@
   top: 0px;
   width: 100vw;
   height: 100vh;
-  background-image: url(../restaurante.jpeg);
+  background-image: url(../image/restaurante.jpeg);
   background-repeat: no-repeat;
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -31,13 +31,13 @@
       hsla(0, 0%, 26%, 0.623),
       hsla(0, 0%, 0%, 0.628)
     ),
-    url(../restaurante.jpeg); /* Chrome 10-25, Safari 5.1-6 */
+    url(../image/restaurante.jpeg); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
       to right,
       hsla(0, 0%, 26%, 0.623),
       hsla(0, 0%, 0%, 0.628)
     ),
-    url(../restaurante.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    url(../image/restaurante.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   background-size: cover;
   background-attachment: fixed;
@@ -308,7 +308,7 @@ h1 {
   margin: auto;
   height: 60vh;
 
-  background-image: url(../restaurante.jpeg);
+  background-image: url(../image/restaurante.jpeg);
   background-repeat: no-repeat;
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -316,13 +316,13 @@ h1 {
       hsla(0, 0%, 26%, 0.623),
       hsla(0, 0%, 0%, 0.628)
     ),
-    url(../restaurante.jpeg); /* Chrome 10-25, Safari 5.1-6 */
+    url(../image/restaurante.jpeg); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
       to right,
       hsla(0, 0%, 26%, 0.623),
       hsla(0, 0%, 0%, 0.628)
     ),
-    url(../restaurante.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    url(../image/restaurante.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   background-size: cover;
   background-attachment: fixed;
