@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="cssStyles/estilos.css" />
+    <title>Menú</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <div class="content_avatar3">
+              <img src="./image/avatar.jpg" alt="" />
+            </div>
+          </a>
+          <!-- Selector del Idioma                                      -->
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            id="idioma"
+          >
+            <option value="0">Selecciona</option>
+            <option value="1">Ingles</option>
+            <option value="2">Español</option>
+          </select>
+          <div class="navbar-collapse1" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menú</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="confirmacion.html">confirmation</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="JavaScriptAjax_ingles.html"
+                  >JavaScript y Ajax</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <main class="javascript_ajax">
+      <h1>JavaScript</h1>
+
+      <div class="palindromo">
+        <h2>Palindromo</h2>
+        <h5>Enter a word</h5>
+        <input
+          id="frase"
+          type="text"
+          value=""
+          placeholder="
+          Enter a word"
+        />
+        <button id="consultar">consult</button>
+      </div>
+      <hr />
+      <div class="numMayor">
+        <h2>Bigger number</h2>
+        <h5>Digit two numbers</h5>
+        <input id="num1" type="text" value="" placeholder="number one" />
+        <input id="num2" type="text" value="" placeholder="number two" />
+        <button id="mayor">Bigger</button>
+      </div>
+      <hr />
+      <div class="vocales">
+        <h2>Vocales</h2>
+        <h5>Enter a phrase</h5>
+        <input id="vocales" type="text" value="" placeholder="Enter a phrase" />
+        <button id="cons_vocales">consult</button>
+      </div>
+      <hr />
+      <hr />
+      <h2>Ajax</h2>
+      <div class="url">
+        <h2>URL of the web page</h2>
+        <h5>Enter a URL</h5>
+        <input
+          id="url"
+          type="text"
+          value=""
+          placeholder="
+        Enter a URL"
+        />
+        <button id="urlBoton">consult</button>
+        <h5>Status and code</h5>
+        <input id="estado" type="text" value="" />
+        <input id="codigo" type="text" value="" />
+        <h5>Headers</h5>
+        <div class="contenidoUrl" id="cabeceras"></div>
+        <h5>Web page content</h5>
+        <div class="contenidoUrl" id="content"></div>
+      </div>
+      <hr />
+    </main>
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

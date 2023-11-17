@@ -10,14 +10,13 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 
     <link rel="stylesheet" href="cssStyles/estilos.css" />
-    <title>Document</title>
+    <title>Menú</title>
   </head>
 
   <body>
-    <div class="header_home">
+    <div class="header">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -25,7 +24,6 @@
               <img src="./image/avatar.jpg" alt="" />
             </div>
           </a>
-
           <!-- Selector del Idioma                                      -->
           <select
             class="form-select"
@@ -36,22 +34,11 @@
             <option value="1">Ingles</option>
             <option value="2">Español</option>
           </select>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="navbar-collapse1" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html"
-                  >Inicio</a
+                  >Home</a
                 >
               </li>
               <li class="nav-item">
@@ -60,6 +47,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="confirmacion.html">Confirmación</a>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="JavaScriptAjax.html"
                   >JavaScript y Ajax</a
@@ -69,40 +57,61 @@
           </div>
         </div>
       </nav>
-      <section class="content_avatar">
-        <img src="./image/avatar.jpg" alt="" />
-      </section>
-      <section class="textos-header">
-        <h1>FoOd<span> Restaurant</span></h1>
-        <p>Comida Colombiana</p>
-      </section>
     </div>
-    <main class="ppal">
-      <section class="about">
-        <h2>ACERCA DE NOSOTROS</h2>
-        <div class="content_about">
-          <div class="content_avatar2">
-            <img src="./image/avatar.jpg" alt="" />
-          </div>
-          <div class="text_about">
-            <h3>Mejor restaurante colombiano en Itagui</h3>
-            <h4>
-              En FoOd<span> Restaurant</span> cuidamos a nuestros clientes.
-            </h4>
-            <p>
-              En nuestro restaurante ofrecemos comida tradicional colombiano con
-              un servicio al cliente ejemplar para formar una experiencia
-              gastronómica maravillosa e inolvidable. Acércate hoy a nuestro
-              restaurante, ubicado en Itagui - Antioquia, y descubre nuestros
-              increíbles platos.
-            </p>
-            <p>
-              Selecciona la opción del menu <b>Confirmation </b>para reservar.
-            </p>
-          </div>
-        </div>
-      </section>
+    <main class="javascript_ajax">
+      <h1>JavaScript</h1>
+
+      <div class="palindromo">
+        <h2>Palindromo</h2>
+        <h5>Dígita una palabra</h5>
+        <input
+          id="frase"
+          type="text"
+          value=""
+          placeholder="Dígita una palabra"
+        />
+        <button id="consultar">Consultar</button>
+      </div>
+      <hr />
+      <div class="numMayor">
+        <h2>Número Mayor</h2>
+        <h5>Dígita dos números</h5>
+        <input id="num1" type="text" value="" placeholder="Número 1" />
+        <input id="num2" type="text" value="" placeholder="Número 2" />
+        <button id="mayor">Mayor</button>
+      </div>
+      <hr />
+      <div class="vocales">
+        <h2>Vocales</h2>
+        <h5>Dígita una palabra</h5>
+        <input
+          id="vocales"
+          type="text"
+          value=""
+          placeholder="Dígita una palabra"
+        />
+        <button id="cons_vocales">Consultar</button>
+      </div>
+      <hr />
+      <hr />
+      <h2>Ajax</h2>
+      <div class="url">
+        <h2>Url de la página Web</h2>
+        <h5>Dígita una Url</h5>
+        <input id="url" type="text" value="" placeholder="Dígita una Url" />
+        <button id="urlBoton">Consultar</button>
+        <h5>Estado y codigo</h5>
+        <input id="estado" type="text" value="" />
+        <input id="codigo" type="text" value="" />
+        <h5>Cabeceras</h5>
+        <div class="contenidoUrl" id="cabeceras"></div>
+        <h5>Contenido página web</h5>
+        <div class="contenidoUrl" id="content"></div>
+      </div>
+      <hr />
     </main>
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
