@@ -134,9 +134,9 @@ async function cargarHTML(e) {
   }, 1000);
 
   //parametros metodo get o post, url a traer, boolenao (true->asyncrona---false->sincrona)
-  ajax.open("GET", "https://es.javascript.info/", true);
+  ajax.open("GET", inputUrl.value, true);
   ajax.setRequestHeader("Access-Control-Allow-Origin", "*");
-
+  ajax.setRequestHeader("Access-Control-Allow-Methods", "GET,POST,OPTIONS,DELETE,PUT");
   await setTimeout(function () {
     estado.value ="Conexión Establecida";
     codigo.value = "1";
@@ -160,7 +160,8 @@ async function cargarHTML(e) {
           //si nuestro estado es igual a 200(ok), insertamos html a nuestro contenedor de la respuesta de ajax
           //contenidoUrl.innerHTML = ajax.responseText;
           document.querySelector("#content").innerHTML = ajax.responseText;
-          document.querySelector("#cabeceras").innerHTML = ajax.getAllResponseHeaders('Content-Type')
+          document.querySelector("#cabeceras").innerHTML = ajax.getAllResponseHeaders('Content-Type');
+          
         } else {
           estado.value ="Petición errada";
         }
